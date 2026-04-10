@@ -1,0 +1,752 @@
+[
+    {
+        "id": "2934b5de91e55b4a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "17ba504a31c0ddb9",
+        "type": "mqtt-broker",
+        "name": "Leaf",
+        "broker": "9a7277b731e1482883f8ff80cdc9a77f.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f2a867cdef804598",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1fd221800e9bba43",
+        "type": "ui_tab",
+        "name": "Home1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "aac2da995c7f6e8a",
+        "type": "ui_group",
+        "name": "Nhiệt độ",
+        "tab": "1fd221800e9bba43",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4aefeb60218b8bce",
+        "type": "ui_group",
+        "name": "Đèn",
+        "tab": "1fd221800e9bba43",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bcb7de239cfa2ee2",
+        "type": "ui_group",
+        "name": "Độ ẩm",
+        "tab": "1fd221800e9bba43",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4032b8bc24e20ab9",
+        "type": "ui_group",
+        "name": "Khí ga",
+        "tab": "1fd221800e9bba43",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ddb368f4a15f02dd",
+        "type": "ui_spacer",
+        "z": "2934b5de91e55b4a",
+        "name": "spacer",
+        "group": "",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aa74ec15ffade451",
+        "type": "ui_group",
+        "name": "Cảnh báo",
+        "tab": "1fd221800e9bba43",
+        "order": 6,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5be51ef80cf51a50",
+        "type": "ui_group",
+        "name": "Cảnh báo",
+        "tab": "1fd221800e9bba43",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "92c474854e5f8a1c",
+        "type": "ui_gauge",
+        "z": "2934b5de91e55b4a",
+        "name": "Khí ga",
+        "group": "4032b8bc24e20ab9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Khí ga",
+        "label": "mmg/cm3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "700",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 890,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "99b367ec6af9223e",
+        "type": "ui_chart",
+        "z": "2934b5de91e55b4a",
+        "name": "Khí ga bảng",
+        "group": "4032b8bc24e20ab9",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 910,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6bac8cd604d3dee6",
+        "type": "ui_gauge",
+        "z": "2934b5de91e55b4a",
+        "name": "Độ ẩm",
+        "group": "bcb7de239cfa2ee2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Do Am",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "DoAm",
+        "x": 930,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "458ee883442fd876",
+        "type": "ui_chart",
+        "z": "2934b5de91e55b4a",
+        "name": "Độ ẩm bảng",
+        "group": "bcb7de239cfa2ee2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "DoAm",
+        "x": 930,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3073560391f9394b",
+        "type": "mqtt in",
+        "z": "2934b5de91e55b4a",
+        "name": "",
+        "topic": "esp/home",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "17ba504a31c0ddb9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "c4b354e3c7ee6796",
+                "fda292a077471c66",
+                "455572fa0cbb25db",
+                "032d44a6ddc13a7a"
+            ]
+        ]
+    },
+    {
+        "id": "c4b354e3c7ee6796",
+        "type": "function",
+        "z": "2934b5de91e55b4a",
+        "name": "Tách nhiệt đô, độ ẩm, chuyển động khí ga",
+        "func": "let data = msg.payload;\n\n// 1. Kiểm tra và Parse JSON nếu dữ liệu là chuỗi\nif (typeof data === \"string\") {\n    try {\n        data = JSON.parse(data);\n    } catch (e) {\n        node.error(\"Dữ liệu đầu vào không phải JSON hợp lệ\", msg);\n        return null; // Dừng luồng nếu dữ liệu lỗi\n    }\n}\n\n// 2. Trích xuất các giá trị (Sử dụng giá trị mặc định là 0 nếu thuộc tính thiếu)\nlet msg_gas  = { payload: data.gas  || 0 };\nlet msg_temp = { payload: data.temp || 0 };\nlet msg_humi = { payload: data.humi || 0 };\n\n// 3. Trả về mảng các thông báo\n// Mỗi phần tử trong mảng tương ứng với một cổng ra (Output) của node Function\nreturn [msg_gas, msg_temp, msg_humi];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "92c474854e5f8a1c",
+                "99b367ec6af9223e"
+            ],
+            [
+                "7fc4b294f661964e",
+                "41257f1dc67fb627"
+            ],
+            [
+                "458ee883442fd876",
+                "6bac8cd604d3dee6"
+            ]
+        ]
+    },
+    {
+        "id": "7fc4b294f661964e",
+        "type": "ui_gauge",
+        "z": "2934b5de91e55b4a",
+        "name": "Nhiệt đô",
+        "group": "aac2da995c7f6e8a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Nhiệt độ",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "NhietDo",
+        "x": 900,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "41257f1dc67fb627",
+        "type": "ui_chart",
+        "z": "2934b5de91e55b4a",
+        "name": "Nhiệt độ bảng",
+        "group": "aac2da995c7f6e8a",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "Nhiệt đô",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "NhietDo",
+        "x": 920,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aca0b50bf45cc2db",
+        "type": "mqtt out",
+        "z": "2934b5de91e55b4a",
+        "name": "",
+        "topic": "esp/led",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "17ba504a31c0ddb9",
+        "x": 760,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "72a2fee78b2b4bf9",
+        "type": "ui_switch",
+        "z": "2934b5de91e55b4a",
+        "name": "Đèn",
+        "label": "Bật tắt đền",
+        "tooltip": "",
+        "group": "4aefeb60218b8bce",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 310,
+        "y": 760,
+        "wires": [
+            [
+                "aca0b50bf45cc2db",
+                "7365a77c1a754b01"
+            ]
+        ]
+    },
+    {
+        "id": "c733c053991c6951",
+        "type": "ui_slider",
+        "z": "2934b5de91e55b4a",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "4aefeb60218b8bce",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 310,
+        "y": 860,
+        "wires": [
+            [
+                "aca0b50bf45cc2db"
+            ]
+        ]
+    },
+    {
+        "id": "3a82a8f75f68a33f",
+        "type": "e-mail",
+        "z": "2934b5de91e55b4a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "22t1020065@husc.edu.vn",
+        "dname": "",
+        "x": 780,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "fda292a077471c66",
+        "type": "function",
+        "z": "2934b5de91e55b4a",
+        "name": "Cảnh báo nhiệt độ khí gas",
+        "func": "let data = msg.payload;\n\n// 1. Parse JSON an toàn\nif (typeof data === \"string\") {\n    try {\n        data = JSON.parse(data);\n    } catch (e) { return null; }\n}\n\nlet temp = data.temp || 0;\nlet gas  = data.gas  || 0;\nlet humi = data.humi || 0;\n\n// 2. Cấu hình ngưỡng và thời gian (5 phút = 300.000ms)\nconst TEMP_THRESHOLD = 35;\nconst GAS_THRESHOLD  = 500;\nconst COOLDOWN       = 300000; \n\nlet lastSent = flow.get(\"lastSent\") || 0;\nlet now = Date.now();\n\n// 3. Kiểm tra điều kiện cảnh báo + Chống spam\nif ((temp > TEMP_THRESHOLD || gas > GAS_THRESHOLD) && (now - lastSent > COOLDOWN)) {\n    \n    flow.set(\"lastSent\", now);\n    \n    let title = \"\";\n    let message = \"\";\n\n    // Phân loại logic cảnh báo\n    if (temp > TEMP_THRESHOLD && gas > GAS_THRESHOLD) {\n        title = \"🚨 CỰC KỲ NGUY HIỂM\";\n        message = \"🔥 Nhiệt độ cao + 🧯 Khí gas cao\\nDễ xuất hiện hiện tượng cháy nổ!\";\n    } \n    else if (temp > TEMP_THRESHOLD) {\n        title = \"🌡️ Cảnh báo nhiệt độ\";\n        message = \"🔥 Nhiệt độ cao vượt ngưỡng!\\nHãy kiểm tra hệ thống làm mát.\";\n    } \n    else if (gas > GAS_THRESHOLD) {\n        title = \"💨 Cảnh báo khí gas\";\n        message = \"🧯 Khí gas cao!\\nPhát hiện dấu hiệu rò rỉ khí gas.\";\n    }\n\n    let timeStr = new Date().toLocaleString(\"vi-VN\");\n\n    // --- CỔNG 1: DỮ LIỆU CHO TABLE ---\n    let msgTable = {\n        payload: [{\n            \"time\": timeStr,       \n            \"messenger\": title      \n        }]\n    };\n\n    // --- CỔNG 2: DỮ LIỆU CHO GMAIL ---\n    let msgGmail = {\n        topic: title,\n        payload: `${message}\n        \n🌡️ Nhiệt độ: ${temp}°C\n💨 Khí gas: ${gas}\n💧 Độ ẩm: ${humi}%\n⏰ Thời gian: ${timeStr}`\n    };\n\n    return [msgTable, msgGmail];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 660,
+        "wires": [
+            [
+                "73c2e9b211375f9d"
+            ],
+            [
+                "3a82a8f75f68a33f"
+            ]
+        ]
+    },
+    {
+        "id": "455572fa0cbb25db",
+        "type": "debug",
+        "z": "2934b5de91e55b4a",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "73c2e9b211375f9d",
+        "type": "ui_table",
+        "z": "2934b5de91e55b4a",
+        "group": "5be51ef80cf51a50",
+        "name": "Cảnh báo khí ga và nhiệt độ",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "time",
+                "title": "Thời gian",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "messenger",
+                "title": "Nội dung cảnh báo",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 820,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "7365a77c1a754b01",
+        "type": "debug",
+        "z": "2934b5de91e55b4a",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "032d44a6ddc13a7a",
+        "type": "function",
+        "z": "2934b5de91e55b4a",
+        "name": "Phát hiện chuyển động",
+        "func": "let data = msg.payload;\n\n// 1. Parse JSON an toàn\nif (typeof data === \"string\") {\n    try {\n        data = JSON.parse(data);\n    } catch (e) { return null; }\n}\n\n// Lấy dữ liệu từ p1 (cảm biến chuyển động ở sân)\nlet motion = data.p1 || 0; \n\n// 2. Cấu hình thời gian chống spam (1 phút)\nconst MOTION_COOLDOWN = 60000; \nlet lastMotionSent = flow.get(\"lastMotionSent\") || 0;\nlet now = Date.now();\n\n// 3. Logic thông báo\nif (motion === 1 && (now - lastMotionSent > MOTION_COOLDOWN)) {\n    \n    flow.set(\"lastMotionSent\", now);\n    \n    // Đổi tiêu đề phù hợp với khu vực sân\n    let title = \"🏡 Thông báo: Có người ở sân\";\n    let timeStr = new Date().toLocaleString(\"vi-VN\");\n\n    // --- CỔNG 1: CHO TABLE ---\n    let msgTable = {\n        payload: [{\n            \"time\": timeStr,            \n            \"messenger\": \"Có người ở sân\"\n        }]\n    };\n    // --- CỔNG 2: CHO GMAIL / NOTIFY ---\n    let msgGmail = {\n        topic: title,\n        payload: `Thông báo hệ thống:\n----------------------------\nĐã phát hiện thấy có người di chuyển ở khu vực sân.\n⏰ Thời gian: ${timeStr}\n📍 Vị trí: Ngoài sân`\n    };\n\n    return [msgTable, msgGmail];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "436336c66043238e"
+            ],
+            [
+                "3a82a8f75f68a33f"
+            ]
+        ]
+    },
+    {
+        "id": "436336c66043238e",
+        "type": "ui_table",
+        "z": "2934b5de91e55b4a",
+        "group": "5be51ef80cf51a50",
+        "name": "Cảnh báo chuyển động",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "time",
+                "title": "Thời gian",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "messenger",
+                "title": "Nội dung cảnh báo",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 790,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d5aaf1a966f6a8b6",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-email": "5.2.1",
+            "node-red-node-ui-table": "0.4.5"
+        }
+    }
+]
