@@ -1,0 +1,22 @@
+# Build folder (rất nặng)
+.pio/
+
+# VSCode settings (tuỳ máy, không cần up)
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python cache (nếu có dùng script)
+__pycache__/
+
+# Environment files
+.env
