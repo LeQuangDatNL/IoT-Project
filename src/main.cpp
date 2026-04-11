@@ -90,22 +90,11 @@ void loop() {
   }
   client.loop();
 
-  float h_real = dht.readHumidity();
-  float t_real = dht.readTemperature();
-  int gas_real = analogRead(GAS_PIN);
-
-  // 2. Cộng thêm một chút nhiễu ngẫu nhiên (Random)
-  // Ví dụ: nhiệt độ sẽ lệch khoảng -0.5 đến +0.5 độ
-  float t = t_real + (random(-5, 5) / 10.0);
-
-  // Độ ẩm lệch khoảng -1% đến +1%
-  float h = h_real + (random(-10, 10) / 10.0);
-
-  // Khí gas lệch khoảng -5 đến +5 đơn vị
-  int gas = gas_real + random(-5, 5);
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
   int m1 = digitalRead(PIR1_PIN);
   int m2 = digitalRead(PIR2_PIN);
-
+  int gas = analogRead(GAS_PIN);
 
   // Logic điều khiển LED tại chỗ
   if (gas > 500 || m2 == HIGH) digitalWrite(LED_RED, HIGH);
